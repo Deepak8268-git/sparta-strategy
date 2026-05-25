@@ -79,14 +79,20 @@ export default function GalleryPage() {
                 onMouseEnter={e => {
                   e.currentTarget.style.transform = 'translateY(-10px)'
                   e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.1)'
-                  e.currentTarget.querySelector('.zoom-icon')!.style.opacity = '1'
-                  e.currentTarget.querySelector('.zoom-icon')!.style.transform = 'translate(-50%, -50%) scale(1)'
+                  const zoomIcon = e.currentTarget.querySelector('.zoom-icon') as HTMLElement
+                  if (zoomIcon) {
+                    zoomIcon.style.opacity = '1'
+                    zoomIcon.style.transform = 'translate(-50%, -50%) scale(1)'
+                  }
                 }}
                 onMouseLeave={e => {
                   e.currentTarget.style.transform = 'translateY(0)'
                   e.currentTarget.style.boxShadow = 'none'
-                  e.currentTarget.querySelector('.zoom-icon')!.style.opacity = '0'
-                  e.currentTarget.querySelector('.zoom-icon')!.style.transform = 'translate(-50%, -50%) scale(0.8)'
+                  const zoomIcon = e.currentTarget.querySelector('.zoom-icon') as HTMLElement
+                  if (zoomIcon) {
+                    zoomIcon.style.opacity = '0'
+                    zoomIcon.style.transform = 'translate(-50%, -50%) scale(0.8)'
+                  }
                 }}
                 onClick={() => setSelectedImage(award.src)}
                 >
