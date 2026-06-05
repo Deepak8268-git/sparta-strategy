@@ -111,7 +111,7 @@ export default function GetInTouchPage() {
                 </div>
                 <div>
                   <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '15px', fontWeight: '600', color: '#0a0a0a', lineHeight: '1.6', maxWidth: '300px' }}>
-                    Shop 38, Parth CHS, Plot 228, Sec-13, Khargar Mumbai - 410210
+                    Plot 228, Sec-13, Khargar Mumbai - 410210
                   </p>
                 </div>
               </div>
@@ -130,7 +130,7 @@ export default function GetInTouchPage() {
                 <div>
                   <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '15px', fontWeight: '600', color: '#0a0a0a', lineHeight: '1.6' }}>
                     +91 83569 96641<br />
-                    +91 84678 11100
+                    +91 70457 57757
                   </p>
                 </div>
               </div>

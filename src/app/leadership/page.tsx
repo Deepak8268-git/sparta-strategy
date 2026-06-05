@@ -9,7 +9,8 @@ export default function LeadershipPage() {
     {
       initials: 'SS',
       name: 'Sanjay H Sharma',
-      role: 'DIRECTOR – BUSINESS STRATEGY & INTERNATIONAL RELATIONS',
+      title: 'Founding President',
+      role: 'BUSINESS STRATEGY & INTERNATIONAL RELATIONS',
       linkedin: 'https://www.linkedin.com/in/sanjayhsharma/',
       bio: 'Brings deep experience in strategic consulting, international relations and corporate advisory. Supports Sparta\'s international business development, market expansion and high-value strategic transactions.',
       fullBio: 'Sanjay Sharma is the Founder & Strategic Advisor of SPARTA Global Strategy, a strategic advisory and investment facilitation platform established in 2006, focused on crossborder investments, institutional partnerships, fundraising, and economic development initiatives.\n\nWith over two decades of experience across capital advisory, foreign direct investment (FDI), international trade, strategic fundraising, and policy-linked infrastructure development, Sanjay Sharma has built a strong reputation as a trusted investment facilitator and ecosystem builder.\n\nHis expertise spans investor engagement, global capital connectivity, economic diplomacy, and institutional relationship management. He has worked extensively across investment strategy, government advisory, international collaborations, and cross-border transactions, supporting investment partnerships between governments, corporates, industrial groups, family offices, and global institutional investors.\n\nUnder his leadership, SPARTA Global Strategy has developed a strong international network across 35+ countries and has been associated with investment promotion, infrastructure enablement, healthcare, renewable energy, logistics, industrial development, economic zones, and strategic investment initiatives.\n\nSanjay Sharma has actively engaged with multiple government bodies, investment promotion agencies, and international institutions across India, Europe, the Middle East, and North America, facilitating strategic collaborations, investor outreach programs, and institutional partnerships. He is recognized for combining strategic insight, fundraising capability, relationship capital, and execution-oriented leadership to support long-term value creation, capital mobilization, and scalable ecosystem development initiatives.'
@@ -17,7 +18,8 @@ export default function LeadershipPage() {
     {
       initials: 'PC',
       name: 'Poonam Chandel',
-      role: 'STRATEGIC GROWTH & BUSINESS DEVELOPMENT PARTNER',
+      title: 'Director',
+      role: 'STRATEGIC GROWTH & BUSINESS DEVELOPMENT',
       linkedin: 'https://www.linkedin.com/in/poonam-chandel-4335881ba/',
       bio: 'Leads strategic partnerships, investor engagement, brand positioning and growth initiatives at Sparta Strategy. Focused on long-term value creation and institutional networking across investment ecosystems.',
       fullBio: 'Poonam Chandel is associated with SPARTA Global Strategy and brings experience across investment banking support, debt fundraising, strategic business development, and management consulting.\n\nHer professional exposure includes supporting fundraising transactions, investor engagement initiatives, business strategy execution, and financial coordination activities across startups, SMEs, and growth-stage enterprises.\n\nShe has actively worked on fundraising and advisory assignments involving equity, structured debt, venture capital, NBFC financing, and strategic investor outreach across sectors including healthcare, manufacturing, infrastructure, consumer businesses, and technology.\n\nPoonam is personally associated with multiple investor networks, venture capital funds, NBFCs, family offices, and institutional capital participants, enabling strong investor connectivity and relationship-driven business development support across fundraising mandates.\n\nHer experience includes preparation of investment presentations, pitch decks, fundraising trackers, information memorandums, investor communication materials, and strategic proposals for capital raising and business expansion initiatives. She has also contributed toward management consulting and CFO support assignments involving MIS reporting, budgeting, process coordination, and strategic execution support.\n\nAt SPARTA Global Strategy, Poonam supports strategic advisory assignments, investor communication, institutional outreach, business development initiatives, and transaction execution support aligned with the firm’s cross-border fundraising and investment facilitation platform.'
@@ -254,6 +256,7 @@ function LeaderCard({ leader, isLastOdd }: { leader: any, isLastOdd: boolean }) 
               marginBottom: '16px',
               lineHeight: '1.5',
             }}>
+              <span style={{ fontWeight: '700' }}>{leader.title}</span><br />
               {leader.role}
             </div>
             <a href={leader.linkedin} target="_blank" rel="noopener noreferrer" style={{
@@ -405,6 +408,7 @@ function LeaderCard({ leader, isLastOdd }: { leader: any, isLastOdd: boolean }) 
                     color: '#c8102e',
                     textTransform: 'uppercase',
                   }}>
+                    <span style={{ fontWeight: '700' }}>{leader.title}</span><br />
                     {leader.role}
                   </div>
                 </div>

@@ -31,7 +31,7 @@ export default function Navbar() {
         <div style={{
           width: '100%',
           margin: '0 auto',
-          padding: '0 60px',
+          padding: '0 20px',
           height: '80px',
           display: 'flex',
           alignItems: 'center',
@@ -58,9 +58,9 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '36px' }} className="desktop-nav">
-            {['Home', 'About', 'Services', 'Leadership', 'Global Network', 'Articles', 'Gallery', 'Contact'].map((item) => {
-              const href = item === 'Home' ? '/' : item === 'About' ? '/about' : item === 'Services' ? '/services' : item === 'Leadership' ? '/leadership' : item === 'Global Network' ? '/global-network' : item === 'Articles' ? '/articles' : item === 'Gallery' ? '/gallery' : item === 'Contact' ? '/contact' : `/#${item.toLowerCase().replace(' ', '-')}`
-              const isActive = (item === 'Home' && pathname === '/') || (item === 'About' && pathname === '/about') || (item === 'Services' && pathname === '/services') || (item === 'Leadership' && pathname === '/leadership') || (item === 'Global Network' && pathname === '/global-network') || (item === 'Articles' && pathname === '/articles') || (item === 'Gallery' && pathname === '/gallery')
+            {['Home', 'About', 'Services', 'Leadership', 'Global Network', 'Strategic Alliance', 'Articles', 'Gallery', 'Contact'].map((item) => {
+              const href = item === 'Home' ? '/' : item === 'About' ? '/about' : item === 'Services' ? '/services' : item === 'Leadership' ? '/leadership' : item === 'Global Network' ? '/global-network' : item === 'Strategic Alliance' ? '/strategic-clients' : item === 'Articles' ? '/articles' : item === 'Gallery' ? '/gallery' : item === 'Contact' ? '/contact' : `/#${item.toLowerCase().replace(' ', '-')}`
+              const isActive = (item === 'Home' && pathname === '/') || (item === 'About' && pathname === '/about') || (item === 'Services' && pathname === '/services') || (item === 'Leadership' && pathname === '/leadership') || (item === 'Global Network' && pathname === '/global-network') || (item === 'Strategic Alliance' && pathname === '/strategic-clients') || (item === 'Articles' && pathname === '/articles') || (item === 'Gallery' && pathname === '/gallery')
               return (
                 <a
                   key={item}
@@ -128,9 +128,9 @@ export default function Navbar() {
             borderTop: '1px solid rgba(0,0,0,0.08)',
             padding: '20px 40px 30px',
           }}>
-            {['Home', 'About', 'Services', 'Leadership', 'Global Network', 'Articles', 'Gallery', 'Contact'].map((item) => {
-              const href = item === 'Home' ? '/' : item === 'About' ? '/about' : item === 'Services' ? '/services' : item === 'Leadership' ? '/leadership' : item === 'Global Network' ? '/global-network' : item === 'Articles' ? '/articles' : item === 'Gallery' ? '/gallery' : item === 'Contact' ? '/contact' : `/#${item.toLowerCase().replace(' ', '-')}`
-              const isActive = (item === 'Home' && pathname === '/') || (item === 'About' && pathname === '/about') || (item === 'Services' && pathname === '/services') || (item === 'Leadership' && pathname === '/leadership') || (item === 'Global Network' && pathname === '/global-network') || (item === 'Articles' && pathname === '/articles') || (item === 'Gallery' && pathname === '/gallery')
+            {['Home', 'About', 'Services', 'Leadership', 'Global Network', 'Strategic Alliance', 'Articles', 'Gallery', 'Contact'].map((item) => {
+              const href = item === 'Home' ? '/' : item === 'About' ? '/about' : item === 'Services' ? '/services' : item === 'Leadership' ? '/leadership' : item === 'Global Network' ? '/global-network' : item === 'Strategic Alliance' ? '/strategic-clients' : item === 'Articles' ? '/articles' : item === 'Gallery' ? '/gallery' : item === 'Contact' ? '/contact' : `/#${item.toLowerCase().replace(' ', '-')}`
+              const isActive = (item === 'Home' && pathname === '/') || (item === 'About' && pathname === '/about') || (item === 'Services' && pathname === '/services') || (item === 'Leadership' && pathname === '/leadership') || (item === 'Global Network' && pathname === '/global-network') || (item === 'Strategic Alliance' && pathname === '/strategic-clients') || (item === 'Articles' && pathname === '/articles') || (item === 'Gallery' && pathname === '/gallery')
               return (
                 <a
                   key={item}

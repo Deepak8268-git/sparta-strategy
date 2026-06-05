@@ -9,6 +9,7 @@ export default function Footer() {
     { name: 'Services', href: '/services' },
     { name: 'Leadership', href: '/leadership' },
     { name: 'Global Network', href: '/global-network' },
+    { name: 'Strategic Alliance', href: '/strategic-clients' },
     { name: 'Articles', href: '/articles' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Contact', href: '/contact' },
@@ -127,12 +128,12 @@ export default function Footer() {
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#c8102e' }}>
                 <Phone size={16} />
-                <span style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '13px', color: '#333' }}>+91 84678 11100</span>
+                <span style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '13px', color: '#333' }}>+91 70457 57757</span>
               </li>
               <li style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', color: '#c8102e' }}>
                 <MapPin size={16} style={{ marginTop: '2px', flexShrink: 0 }} />
                 <span style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '13px', color: '#333', lineHeight: '1.6', maxWidth: '200px' }}>
-                  Shop 38, Parth CHS, Plot 228, Sec-13, Khargar Mumbai- 410210
+                  Plot 228, Sec-13, Khargar Mumbai - 410210
                 </span>
               </li>
             </ul>

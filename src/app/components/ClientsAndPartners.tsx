@@ -1,13 +1,18 @@
 export default function ClientsAndPartners() {
   const clients = [
-    'Adani', 'Essar',
-    'Bengaluru International\nAirport', 'Shriram Properties'
+    { name: 'Adani', logo: '/clients/adani.jpeg' },
+    { name: 'Essar', logo: '/clients/essar.jpeg' },
+    { name: 'Bengaluru International Airport', logo: '/clients/airport.jpeg' },
+    { name: 'Shriram Properties', logo: '/clients/shriram.jpeg' },
   ]
 
   const partners = [
-    'fDi Intelligence', 'Financial Times Business\nNetwork',
-    'OCO Global', 'IDA Ireland',
-    'AWEX (Wallonia)', 'New York State EDC'
+    { name: 'fDi Intelligence', logo: '/partners/fdi.jpeg' },
+    { name: 'Financial Times Business Network', logo: '/partners/ft.jpeg' },
+    { name: 'OCO Global', logo: '/partners/oco.jpeg' },
+    { name: 'IDA Ireland', logo: '/partners/ireland.jpeg' },
+    { name: 'AWEX (Wallonia)', logo: '/partners/wallonia.jpeg' },
+    { name: 'New York State EDC', logo: '/partners/newyork.jpeg' },
   ]
 
   return (
@@ -47,14 +52,36 @@ export default function ClientsAndPartners() {
                 padding: '32px 24px',
                 borderBottom: '1px solid #eaeaea',
                 borderRight: i % 2 === 0 ? '1px solid #eaeaea' : 'none',
-                fontFamily: 'Playfair Display, serif',
-                fontSize: '18px',
-                color: '#333',
-                whiteSpace: 'pre-line',
+                height: '160px',
                 display: 'flex',
+                justifyContent: 'center',
                 alignItems: 'center',
               }}>
-                {client}
+                {client.logo ? (
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
+                    <img src={client.logo} alt={client.name} style={{ maxHeight: '60px', maxWidth: '85%', objectFit: 'contain', mixBlendMode: 'multiply' }} />
+                    <span style={{
+                      fontFamily: 'Montserrat, sans-serif',
+                      fontSize: '12px',
+                      fontWeight: '600',
+                      color: '#0a0a0a',
+                      letterSpacing: '0.05em',
+                      textTransform: 'uppercase',
+                      textAlign: 'center'
+                    }}>
+                      {client.name}
+                    </span>
+                  </div>
+                ) : (
+                  <span style={{
+                    fontFamily: 'Playfair Display, serif',
+                    fontSize: '18px',
+                    color: '#333',
+                    textAlign: 'center'
+                  }}>
+                    {client.name}
+                  </span>
+                )}
               </div>
             ))}
           </div>
@@ -84,14 +111,36 @@ export default function ClientsAndPartners() {
                 padding: '32px 24px',
                 borderBottom: '1px solid #eaeaea',
                 borderRight: i % 2 === 0 ? '1px solid #eaeaea' : 'none',
-                fontFamily: 'Playfair Display, serif',
-                fontSize: '18px',
-                color: '#333',
-                whiteSpace: 'pre-line',
+                height: '160px',
                 display: 'flex',
+                justifyContent: 'center',
                 alignItems: 'center',
               }}>
-                {partner}
+                {partner.logo ? (
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
+                    <img src={partner.logo} alt={partner.name} style={{ maxHeight: '60px', maxWidth: '85%', objectFit: 'contain', mixBlendMode: 'multiply' }} />
+                    <span style={{
+                      fontFamily: 'Montserrat, sans-serif',
+                      fontSize: '12px',
+                      fontWeight: '600',
+                      color: '#0a0a0a',
+                      letterSpacing: '0.05em',
+                      textTransform: 'uppercase',
+                      textAlign: 'center'
+                    }}>
+                      {partner.name}
+                    </span>
+                  </div>
+                ) : (
+                  <span style={{
+                    fontFamily: 'Playfair Display, serif',
+                    fontSize: '18px',
+                    color: '#333',
+                    textAlign: 'center'
+                  }}>
+                    {partner.name}
+                  </span>
+                )}
               </div>
             ))}
           </div>

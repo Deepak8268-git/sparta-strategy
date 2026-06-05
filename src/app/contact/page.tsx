@@ -84,7 +84,7 @@ export default function ContactPage() {
                 <div style={{ display: 'flex', gap: '16px', marginBottom: '16px', alignItems: 'flex-start' }}>
                   <MapPin size={18} color="#c8102e" style={{ flexShrink: 0, marginTop: '2px' }} />
                   <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '14px', color: '#555', lineHeight: '1.7' }}>
-                    228 & 637, Commodity Exchange, Sector 19, Vashi, Navi Mumbai – 400705, Maharashtra, India
+                    Plot 228, Sec-13, Khargar Mumbai - 410210
                   </p>
                 </div>
                 
@@ -92,7 +92,7 @@ export default function ContactPage() {
                   <Phone size={18} color="#c8102e" style={{ flexShrink: 0, marginTop: '2px' }} />
                   <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '14px', color: '#555', lineHeight: '1.7' }}>
                     +91 83569 96641<br/>
-                    +91 84678 11100
+                    +91 70457 57757
                   </p>
                 </div>
               </div>
@@ -175,11 +175,12 @@ export default function ContactPage() {
                   <div className="input-group">
                     <label style={{ display: 'block', fontSize: '10px', fontWeight: '600', letterSpacing: '0.15em', color: '#888', marginBottom: '8px' }}>AREA OF INTEREST</label>
                     <div style={{ position: 'relative' }}>
-                      <select className="minimal-input" style={{ appearance: 'none', background: 'transparent', cursor: 'pointer', borderRadius: 0 }}>
-                        <option>FDI Advisory</option>
-                        <option>Corporate Expansion</option>
-                        <option>Market Entry</option>
-                        <option>Other</option>
+                      <select defaultValue="" className="minimal-input" style={{ appearance: 'none', background: 'transparent', cursor: 'pointer', borderRadius: 0 }}>
+                        <option value="" disabled hidden></option>
+                        <option value="FDI Advisory">FDI Advisory</option>
+                        <option value="Corporate Expansion">Corporate Expansion</option>
+                        <option value="Market Entry">Market Entry</option>
+                        <option value="Other">Other</option>
                       </select>
                       <div style={{ position: 'absolute', right: '0', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', color: '#0a0a0a' }}>
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>

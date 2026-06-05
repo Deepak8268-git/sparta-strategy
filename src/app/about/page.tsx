@@ -97,7 +97,7 @@ export default function AboutPage() {
             </div>
             <div>
               <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '15px', color: '#555', lineHeight: '1.8', marginBottom: '24px' }}>
-                Sparta Strategy is one of India&apos;s leading mid-market FDI consulting firms. We serve <strong style={{ color: '#0a0a0a', fontWeight: '600' }}>governments and free zones</strong> with investment promotion and investor attraction, and <strong style={{ color: '#0a0a0a', fontWeight: '600' }}>corporations</strong> with location advisory, market entry and cross-border expansion.
+                Sparta Strategy is one of India&apos;s leading mid-market FDI consulting firms. We serve governments and free zones with investment promotion and investor attraction, and corporations with location advisory, market entry and cross-border expansion.
               </p>
               <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '15px', color: '#555', lineHeight: '1.8', marginBottom: '24px' }}>
                 Founded to serve investment promotion initiatives of Indian government agencies and free zones, we have since expanded into outward FDI — helping foreign IPAs attract investment from India, and supporting Indian corporates as they expand internationally.

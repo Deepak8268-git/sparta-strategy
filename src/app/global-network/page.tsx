@@ -15,12 +15,12 @@ export default function GlobalNetworkPage() {
   ]
 
   const partners = [
-    'fDi Intelligence',
-    'Financial Times Business Network',
-    'OCO Global',
-    'IDA Ireland',
-    'AWEX (Wallonia)',
-    'New York State EDC',
+    { name: 'fDi Intelligence', logo: '/partners/fdi.jpeg' },
+    { name: 'Financial Times Business Network', logo: '/partners/ft.jpeg' },
+    { name: 'OCO Global', logo: '/partners/oco.jpeg' },
+    { name: 'IDA Ireland', logo: '/partners/ireland.jpeg' },
+    { name: 'AWEX (Wallonia)', logo: '/partners/wallonia.jpeg' },
+    { name: 'New York State EDC', logo: '/partners/newyork.jpeg' },
   ]
 
   const mapPoints = [
@@ -229,21 +229,39 @@ export default function GlobalNetworkPage() {
           }} className="grid-3-col">
             {partners.map((partner, idx) => (
               <div key={idx} style={{
-                padding: '60px 40px',
+                padding: '40px',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
                 textAlign: 'center',
                 borderBottom: '1px solid #eaeaea',
                 borderRight: (idx + 1) % 3 !== 0 ? '1px solid #eaeaea' : 'none',
+                height: '160px',
               }} className="grid-cell-center">
-                <span style={{
-                  fontFamily: 'Playfair Display, serif',
-                  fontSize: '20px',
-                  color: '#0a0a0a',
-                }}>
-                  {partner}
-                </span>
+                {partner.logo ? (
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
+                    <img src={partner.logo} alt={partner.name} style={{ maxHeight: '65px', maxWidth: '85%', objectFit: 'contain', mixBlendMode: 'multiply' }} />
+                    <span style={{
+                      fontFamily: 'Montserrat, sans-serif',
+                      fontSize: '13px',
+                      fontWeight: '600',
+                      color: '#0a0a0a',
+                      letterSpacing: '0.05em',
+                      textTransform: 'uppercase',
+                      textAlign: 'center'
+                    }}>
+                      {partner.name}
+                    </span>
+                  </div>
+                ) : (
+                  <span style={{
+                    fontFamily: 'Playfair Display, serif',
+                    fontSize: '20px',
+                    color: '#0a0a0a',
+                  }}>
+                    {partner.name}
+                  </span>
+                )}
               </div>
             ))}
           </div>

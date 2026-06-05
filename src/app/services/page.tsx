@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Sectors from '../components/Sectors'
 import { LineChart, Briefcase, Target, MapPin, Globe, Building2, ShipWheel, Network, Factory, Plane, Search, Handshake, ArrowRight } from 'lucide-react'
 
 export default function ServicesPage() {
@@ -75,8 +76,61 @@ export default function ServicesPage() {
           </div>
         </section>
 
+        {/* CAPITAL RAISING & FUND RAISING SECTION */}
+        <section style={{
+          position: 'relative',
+          padding: '120px 0',
+          marginTop: '100px',
+          background: '#0a0a0a url("https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070&auto=format&fit=crop") center/cover no-repeat',
+          overflow: 'hidden'
+        }}>
+          {/* Dark overlay */}
+          <div style={{
+            position: 'absolute',
+            top: 0, left: 0, right: 0, bottom: 0,
+            background: 'linear-gradient(135deg, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.85) 100%)',
+            zIndex: 0
+          }}></div>
+
+          <div style={{ 
+            maxWidth: '1280px', 
+            margin: '0 auto', 
+            padding: '0 40px',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'center',
+            position: 'relative',
+            zIndex: 1
+          }}>
+            <div className="section-label" style={{ marginBottom: '32px', color: '#c8102e' }}>
+              SPECIALIZED PRACTICE
+            </div>
+            <h2 style={{
+              fontFamily: 'Playfair Display, serif',
+              fontSize: 'clamp(36px, 5vw, 56px)',
+              fontWeight: '400',
+              color: '#ffffff',
+              lineHeight: '1.2',
+              marginBottom: '24px',
+            }}>
+              Capital Raising & Fund Raising
+            </h2>
+            <p style={{
+              fontFamily: 'Montserrat, sans-serif',
+              fontSize: '18px',
+              color: '#cccccc',
+              lineHeight: '1.7',
+              maxWidth: '800px',
+            }}>
+              Strategic advisory and execution support for capital raising. We leverage our extensive global network to connect high-growth businesses, infrastructure projects, and funds with institutional investors, private equity, and sovereign wealth capital across borders.
+            </p>
+          </div>
+        </section>
+
         {/* PRACTICE AREAS GRID */}
-        <section style={{ maxWidth: '1280px', margin: '0 auto' }}>
+        <section style={{ maxWidth: '1280px', margin: '0 auto', padding: '120px 0' }}>
           {/* 
             To achieve the specific internal border look from the screenshot:
             We use a grid with 1px gap and a light grey background for the container.
@@ -94,9 +148,10 @@ export default function ServicesPage() {
                 <GridCard key={idx} area={area} num={num} />
               )
             })}
-            {/* Removed the CTA block as requested, leaving the grid with just the 10 practice areas */}
           </div>
         </section>
+
+        <Sectors />
 
         {/* ENGAGEMENT MODEL */}
         <section style={{
