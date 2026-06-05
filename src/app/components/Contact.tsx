@@ -40,7 +40,7 @@ export default function Contact() {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
             {[
-              { label: 'Email', value: 'info@sparta.co.in' },
+              { label: 'Email', value: 'info@spartastrategy.in' },
               { label: 'Headquarters', value: 'Mumbai, India' },
               { label: 'Phone', value: '+91 22 6600 0000' },
             ].map((item, i) => (

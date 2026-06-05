@@ -112,7 +112,7 @@ export default function ContactPage() {
                 
                 <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
                   <Mail size={18} color="#c8102e" style={{ flexShrink: 0 }} />
-                  <a href="mailto:info@sparta.co.in" style={{ 
+                  <a href="mailto:info@spartastrategy.in" style={{ 
                     fontFamily: 'Montserrat, sans-serif', 
                     fontSize: '14px', 
                     color: '#555', 
@@ -122,7 +122,7 @@ export default function ContactPage() {
                   onMouseEnter={e => e.currentTarget.style.color = '#c8102e'}
                   onMouseLeave={e => e.currentTarget.style.color = '#555'}
                   >
-                    info@sparta.co.in
+                    info@spartastrategy.in
                   </a>
                 </div>
               </div>

@@ -120,7 +120,7 @@ export default function Footer() {
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <li style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#c8102e' }}>
                 <Mail size={16} />
-                <span style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '13px', color: '#333' }}>info@sparta.co.in</span>
+                <span style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '13px', color: '#333' }}>info@spartastrategy.in</span>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#c8102e' }}>
                 <Phone size={16} />
